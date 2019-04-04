@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topPanel">
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/george" />
+
+        <TextView
+            android:id="@+id/myImageViewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/profilePic"
+            android:layout_alignTop="@+id/profilePic"
+            android:layout_alignRight="@+id/profilePic"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:text="George Costanza"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="40dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstPanel"
+        android:layout_below="@id/topPanel">
+        <TextView
+            android:id="@+id/mobileNum"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="0501320132"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/mobileNum"
+            android:layout_centerHorizontal="true"
+            android:text="Mobile"
+            android:textColor="@color/grey"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/phoneicon"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondPanel"
+        android:layout_below="@id/firstPanel">
+
+        <TextView
+            android:id="@+id/workNum"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="041323132"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/work"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/workNum"
+            android:layout_centerHorizontal="true"
+            android:text="Work"
+            android:textColor="@color/grey"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdPanel"
+        android:layout_below="@id/secondPanel">
+
+        <TextView
+            android:id="@+id/personalMailAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="georgecostanza@example.com"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/personalMail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/personalMailAdress"
+            android:layout_centerHorizontal="true"
+            android:text="Personal Mail"
+            android:textColor="@color/grey"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/mailicon" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forthPanel"
+        android:layout_below="@id/thirdPanel">
+
+        <TextView
+            android:id="@+id/workMailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="workcostanza@example.com"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/worklMail"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/workMailAddress"
+            android:layout_centerHorizontal="true"
+            android:text="Work Mail"
+            android:textColor="@color/grey"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomPanel"
+        android:layout_below="@id/forthPanel"
+        android:weightSum="100"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/custom_button" />
+
+        <TextView
+            android:id="@+id/likeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_weight="40"
+            android:layout_marginStart="150dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
