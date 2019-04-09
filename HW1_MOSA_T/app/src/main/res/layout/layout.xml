@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Profile number 1"
+            android:text="Profile number 3"
             android:padding="25dp"
             />
         <Button
@@ -55,7 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Profile number 2"
+            android:text="Profile number 4"
             android:padding="25dp"
             />
         <Button
@@ -63,7 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Profile number 2"
+            android:text="Profile number 5"
             android:padding="25dp"
             />
     </LinearLayout>

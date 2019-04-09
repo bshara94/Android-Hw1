@@ -45,7 +45,7 @@ public class mainPage extends Activity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(mainPage.this,MainActivity.class);
+                Intent myIntent = new Intent(mainPage.this,MainActivity3.class);
                 startActivity(myIntent);
             }
         });
